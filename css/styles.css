@@ -11,8 +11,8 @@ body {
 }
 .box-box{
   background: rgba(29,31,40,0.9);
-  width: 500px;
-  height: 650px;
+  max-width: 500px;
+  max-height: 650px;
   border-radius: 4px;
   box-shadow: 0 0 12px #ccc inset;
   margin: 40px auto;
