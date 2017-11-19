@@ -1,0 +1,76 @@
+*{
+  border-collapse: collapse;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(29,31,40);
+}
+.box-box{
+  background: rgba(29,31,40,0.9);
+  width: 500px;
+  height: 650px;
+  border-radius: 4px;
+  box-shadow: 0 0 12px #ccc inset;
+  margin: 40px auto;
+}
+.contener{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 60px;
+  height: 60px;
+  margin: auto;
+}
+.rouTerRed,
+.rouTerGreen,
+.rouTerBlue{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin: auto;
+}
+.rouTerRed{animation: clockwise 1.5s -0.1s linear infinite;}
+.rouTerGreen{animation: clockwise 1.5s -0.3s linear infinite;}
+.rouTerBlue{animation: clockwise 1.5s -0.5s linear infinite;}
+
+.spin{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: auto;
+}
+.red{
+  background: rgba(255,0,0,0.8);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.green{
+  background: rgba(0,255,0,0.8);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.blue{
+  background: rgba(0,0,255,0.8);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mix{
+  background: rgb(255,255,0);
+}
+
+@keyframes clockwise {
+  0%{transform: rotateZ(0deg);}
+  40%{transform: rotateZ(180deg);}
+  80%{transform: rotateZ(360deg);}
+  100%{transform: rotateZ(360deg);}
+}
+
+/*# sourceMappingURL=style.css.map */
