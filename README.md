@@ -1,2 +1,2 @@
-# zadanie_8_6
+# spinner
 The spinner made in html and css.
